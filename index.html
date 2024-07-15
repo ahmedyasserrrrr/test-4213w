@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AYSR</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <style>
+
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            direction: rtl;
+        }
+
+        .navbar {
+            position: fixed;
+            top: 0;
+            right: 0;
+            height: 100%;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            width: 60px;
+            background-color: #fff;
+            display: flex;
+            flex-direction: column;
+            z-index: 999;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0;
+            transition: all 0.3s ease;
+        }
+
+        .navbar .top-section {
+            width: 100%;
+        }
+
+        .navbar .language {
+            background-color: #4C4D49;
+            color: #968F75;
+            text-align: center;
+            padding: 25px 0;
+            font-size: 14px;
+        }
+
+        .navbar .amaad {
+            background-color: #968F75;
+            color: #fff;
+            text-align: center;
+            padding: 35px 0;
+            font-size: 14px;
+            font-weight: bold;
+        }
+
+        .navbar .menu-icon {
+            color: #968F75;
+            font-size: 24px;
+            cursor: pointer;
+            margin-bottom: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .navbar .menu {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .navbar .menu ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .navbar .menu ul li {
+            margin: 20px 0;
+        }
+
+        .navbar .menu ul li a {
+            color: #968F75;
+            font-size: 24px;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .navbar .menu ul li a:hover {
+            color: #FFD700; /* Gold color */
+        }
+
+        .social-icons {
+            margin-top: auto;
+        }
+
+        .social-icons ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .cc span {
+           
+            display:block;
+            align-items: center;
+        }
+
+        /* .social-icons ul li {
+            margin: 10px 0;
+        } */
+        /* .cc {
+            margin: 10px 0;
+        } */
+
+        
+
+.image-containerr img {
+           
+           transition: transform 0.3s;
+          
+       }
+       .image-containerr img:hover {
+           transform: scale(1.1);
+       }
+
+
+       header {
+   min-height: 100vh;
+   background-image: linear-gradient(rgba(255, 255, 255, 0.808),rgba(255, 255, 255, 0.808)), url(images/pexels-chaitaastic-2124696.jpg);
+   background-position: center;
+   background-size: cover;
+   background-clip: padding-box; /* تحديد المنطقة الداخلية للصورة */
+}
+
+
+.ahmed{
+margin-left: auto;    text-align: center;
+margin-right: auto;    text-align: center;
+display: block;
+
+}
+        .social-icons ul li a {
+            color: #968F75;
+            font-size: 20px;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .social-icons ul li a:hover {
+            color: #FFD700; /* Gold color */
+        }
+
+        @media (max-width: 768px) {
+            .navbar {
+                width: 100%; /* جعل النافبار يمتد عبر الشاشة عند الهواتف النقالة */
+                flex-direction: row; /* تحديد الاتجاه إلى أفقي */
+                height: auto;
+            }
+            .navbar .language {
+            background-color: black;
+            color: #968F75;
+
+            font-size: 14px;
+        }
+        .navbar .menu-icon {
+            color: #968F75;
+            font-size: 24px;
+            cursor: pointer;
+            margin-top: 15px;
+
+        
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+            .navbar .top-section {
+                display: none;
+            }
+
+          
+
+         
+
+            .navbar .menu ul {
+                display: none;
+
+            }
+
+            .navbar .menu ul li {
+                display: none;
+            }
+
+            .navbar .amaad {
+                display: none;
+
+        }
+
+        .navbar .menu-icon {
+            display: block;
+
+        }
+
+        .navbar .menu {
+           display: none;
+        }
+
+        .navbar .menu ul {
+            display: none;
+
+        }
+
+        .navbar .menu ul li {
+            display: none;
+        }
+
+        .navbar .menu ul li a {
+           display: none;
+        }
+
+       
+
+        .social-icons {
+display: none;        }
+
+        .social-icons ul {
+           display: none;
+        }
+        .cc span {
+           
+            display:none;
+           
+        }
+        }
+
+      
+        .row {
+    margin: 0;
+    padding: 15px;
+}
+
+.col-md-6 {
+    padding: 10px; /* توفير مسافة داخلية مناسبة */
+}
+
+p {
+    text-align: justify; /* توزيع النصوص بشكل متساوٍ */
+}
+h2 {
+    text-align: justify; /* توزيع النصوص بشكل متساوٍ */
+}
+
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <div class="top-section">
+            <div class="language">
+                العربية
+            </div>
+            <div class="amaad">
+                AYSR
+            </div>
+        </div>
+        <div class="menu-icon">
+            &#9776; <!-- Unicode for menu icon -->
+            <div class="cc">
+                <span>M</span>
+                <span>E</span>
+                <span>N</span>
+                <span>U</span>
+            </div>
+        </div>
+        <div class="menu">
+            <ul>
+                <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+            </ul>
+        </div>
+      
+    </div>
+
+    <header>
+        <div class="container">
+            <div class="ahmed">
+                <!-- Content for header -->
+            </div>
+        </div>
+    </header>
+
+    <div class="container" style="padding: 30px;" >
+        <div class="row"  >
+            <div class="col-md-6" style="margin-top: 23px; ">
+               
+                <h2 class="float-right" style="color: 
+                #0A284E;"> من نحن .؟  </h2>
+                <br>
+
+                <div class="float-right">
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non saepe nihil, placeat temporibus tempore omnis, facere eius voluptatem harum cumque qui exercitationem odio dolorum, earum laudantium fuga quibusdam ab aliquid!
+                    </p>
+                </div>
+            </div>
+            <div class="col-md-6 image-container  " style="margin-bottom: 30px;">
+                <img src="images/WhatsApp Image 2024-07-15 at 6.11.05 PM.jpeg" width="100%" alt="">
+            </div>
+        </div>
+    </div>
+
+    <nav class="navbar navbar-expand-md navbar-white shadow-sm fixed p-3 d-md-none" style="background-color:#4C4D49">
+        <div class="container">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fas fa-bars menu-icon" style="color: #968F75;"></i>
+            </button>
+          
+            <a class="navbar-brand" href="test.html" style="margin-left: auto; color: #968F75;" onclick="redirectToPath()">
+              العربيه
+            </a>
+    
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="control panel.html" onclick="redirectToPath()" style="color: #0A284E;">لوحة التحكم</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="استكشاف.html" onclick="redirectToPath()" style="color: #0A284E;">استكشاف</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="test.html" onclick="redirectToPath()" style="color: #0A284E;">عقارات جاهزه</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-warning" href="index.html" onclick="redirectToPath()" style="color: #0A284E;">انضم</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+<style>
+@media (min-width: 850px) {
+    .d {
+        display: none !important; /* إخفاء النافبار على الشاشات أكبر من الهواتف النقالة */
+    }
+}
+    
+.image-container {
+    text-align: center;
+}
+
+.image-container img {
+    width: 75%;
+    max-width: 100%;
+    height: auto;
+}
+
+.row {
+    margin: 0;
+    padding: 15px;
+}
+
+.col-md-6 {
+    padding: 10px; /* توفير مسافة داخلية مناسبة */
+}
+
+p {
+    text-align: justify; /* توزيع النصوص بشكل متساوٍ */
+}
+
+
+.image-containerr img {
+           
+            transition: transform 0.3s;
+           
+        }
+        .image-containerr img:hover {
+            transform: scale(1.1);
+        }
+</style>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const menuIcon = document.querySelector('.menu-icon');
+            const menu = document.querySelector('.menu ul');
+            menuIcon.addEventListener('click', function() {
+                menu.classList.toggle('show');
+            });
+        });
+    </script>
+    
+</body>
+</html>
